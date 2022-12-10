@@ -18,6 +18,10 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## OpenAI Key
+
+You will need to create your own openai api key to make http requests to openai
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
