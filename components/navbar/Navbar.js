@@ -19,6 +19,11 @@ const Navbar = () => {
                 Image Generator
               </Link>
             </li>
+            <li>
+              <Link href='/textCompletion' className={styles.navLink}>
+                Text Completion
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

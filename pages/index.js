@@ -14,6 +14,9 @@ export default function Home() {
         <li>
           <Link href='/imageGenerator'>Image Generator</Link>
         </li>
+        <li>
+          <Link href='/textCompletion'>Text Completion</Link>
+        </li>
       </ul>
     </div>
   );

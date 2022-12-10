@@ -20,8 +20,6 @@ const imageGenerator = () => {
     const prompt = e.target[0].value;
     const size = e.target[1].value;
 
-    setInputError('');
-
     if (prompt === '') {
       setInputError('Image description required');
       return;
