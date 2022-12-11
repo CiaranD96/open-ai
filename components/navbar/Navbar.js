@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <nav>
-        <div className='nav-wrapper'>
+        <div className='nav-wrapper blue lighten-1'>
           <Link href='/' className='brand-logo'>
             OpenAI
           </Link>
