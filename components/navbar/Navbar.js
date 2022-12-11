@@ -1,33 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
 
-import styles from './Navbar.module.css';
-
 const Navbar = () => {
   return (
-    <header>
-      <div className={styles.navbar}>
-        <div className={styles.navbarLogo}>
-          <Link href='/' className={styles.navLink}>
-            OpenAI
-          </Link>
-        </div>
-        <nav>
-          <ul className={styles.navbarLinks}>
-            <li>
-              <Link href='/imageGenerator' className={styles.navLink}>
-                Image Generator
-              </Link>
-            </li>
-            <li>
-              <Link href='/textCompletion' className={styles.navLink}>
-                Text Completion
-              </Link>
-            </li>
-          </ul>
-        </nav>
+    <nav>
+      <div className='nav-wrapper blue lighten-1'>
+        <Link href='/' className='brand-logo'>
+          OpenAI
+        </Link>
+        <ul id='nav-mobile' className='right hide-on-med-and-down'>
+          <li>
+            <Link href='/imageGenerator'>Image Generator</Link>
+          </li>
+          <li>
+            <Link href='/textCompletion'>Text Completion</Link>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
   );
 };
 

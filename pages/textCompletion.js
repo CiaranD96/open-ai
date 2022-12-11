@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 import Spinner from '../components/spinner/Spinner';
 
-import styles from '../styles/textCompletion.module.css';
-
 const textCompletion = () => {
   const [openaiAnswer, setOpenAiAnswer] = useState('');
   const [inputError, setInputError] = useState('');
@@ -65,23 +63,23 @@ const textCompletion = () => {
   return (
     <div>
       <main>
-        <section className={styles.showcase}>
-          <form id={styles.form} onSubmit={onSubmit}>
+        <section className='showcase'>
+          <form id='form' onSubmit={onSubmit}>
             <h1>Talk to OpenAI</h1>
-            <p className={styles.errorMsg}>{inputError && inputError}</p>
-            <input id={styles.prompt} type='text' placeholder='Enter text' />
-            <button type='submit' className={styles.btn}>
+            <p className='input-error'>{inputError && inputError}</p>
+            <input id='prompt' type='text' placeholder='Enter text' />
+            <button type='submit' className='btn blue lighten-1'>
               Ask OpenAI
             </button>
           </form>
         </section>
 
-        <section className={styles.openaiResponse}>
+        <section className='container'>
           {errorMsg && errorMsg}
 
           {openaiAnswer && (
-            <div className={styles.response}>
-              <h2 className={styles.subheader}>OpenAIs Response</h2>
+            <div className='response'>
+              <h2 className='subheader'>OpenAIs Response</h2>
               <p>{openaiAnswer}</p>
             </div>
           )}
